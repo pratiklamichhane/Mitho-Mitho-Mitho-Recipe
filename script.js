@@ -61,7 +61,7 @@ searchBtn.addEventListener('click', () => {
         recipe.style.display = "block");
         }); 
     
-    }
+    }W
 });
 document.getElementById('user-input').addEventListener('keyup', function(event) {
     if (event.keyCode === 13) {
