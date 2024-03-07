@@ -4,7 +4,7 @@ let url = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
 
 let userInput = document.getElementById('user-input').value;
 
-fetch(url + "pizza")
+fetch(url + "chicken")
     .then((response) => response.json())
     .then((data) => {
     console.log(data);
