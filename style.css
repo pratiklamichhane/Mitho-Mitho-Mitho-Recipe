@@ -6,12 +6,12 @@
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #f4f4f4;
+    background: #eaeaea;
 }
 
 
 .container{
-    background-color: rgb(102, 134, 250);
+    background-color: rgb(255, 255, 255);
     font-size: 18px;
     padding: 3rem 2rem;
     width: 85vw;
@@ -44,7 +44,7 @@ body{
     background-color: #ffffff;
 } 
 
-.search-btn{
+#search-btn{
     background-color: #102a42;
     color: #fff;
     border: none;
@@ -55,11 +55,106 @@ body{
     margin-left: 0.5rem;
 }
 
-.search-btn:hover{
+#search-btn:hover{
     background-color: #1b3b5a;
 }
+
 #result img{
     width: 100%;
     margin-bottom: 1rem;
     border-radius: 5px;
+}
+#result h2{
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+} 
+
+/* format text with named pre */
+pre{
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    line-height:2rem;
+}
+#recipe-container{
+    position: absolute;
+    background-color: #fff;
+    min-height: 100%;
+    width: 100%;
+    top : 0;
+    left : 0;
+    padding: 30px;
+    border-radius: 20px;
+    display: none;
+
+
+}
+.close-recipe{
+    display: flex;
+    justify-content: flex-end;
+}
+#recipe-container button{
+    background-color: #280000;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+#show-recipe{
+    background-color: #102a42;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#show-recipe:hover{
+    background-color: #1b3b5a;
+}
+ul{
+    font-size: 1em;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.8em 1.1em;
+    padding: 1.2em 0 0 1.2em;
+    
+}
+#footer{
+   text-align: center;
+    margin-top: 2em;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: #102a42; 
+}
+#footer a{
+    text-decoration: none;
+    color: #102a42;
+    font-size: 20px;
+}
+#warning{
+    color: rgb(86, 2, 2);
+}
+
+@media (max-width: 768px){
+    .container{
+        width: 90vw;
+        font-size: 0.9em;
+    }
+    #recipe-container{
+        padding: 20px;
+
+    }
+    ul{
+        padding: 1em 0 0 1em;
+    }
 }
